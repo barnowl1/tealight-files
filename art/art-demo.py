@@ -30,7 +30,7 @@ hue = 0
 def handle_mousemove(x,y):
   global lastx, lasty, hue
   
-  line(lastx or x, lasty or y, x, y)
+  spot(lastx or x, lasty or y,3)
   color("hsl(%d,100%%,50%%)" % hue)
   
   hue += 1
